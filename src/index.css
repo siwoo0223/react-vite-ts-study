@@ -24,7 +24,7 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  /* display: flex; */
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -65,4 +65,13 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* global.css or your styles.css */
+.ant-menu-item, .ant-menu-submenu-title {
+  border-bottom: none !important; /* 메뉴 항목 하단 파란색 선 제거 */
+}
+
+.ant-menu-item:hover, .ant-menu-submenu-title:hover {
+  border-bottom: none !important; /* hover 시에도 파란색 선 제거 */
 }
